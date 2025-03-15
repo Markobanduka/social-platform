@@ -8,7 +8,7 @@ const createTokenCache = (): TokenCache => {
       try {
         const item = await SecureStore.getItemAsync(key);
         if (item) {
-          // console.log(`${key} was retrieved 🔐: ${item}`);
+          console.log(`${key} was retrieved 🔐: ${item}`);
         } else {
           console.log("No values stored under key: " + key);
         }
